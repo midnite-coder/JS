@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <tr><td>1st Number:</td><td><input type="text" id="first"></td></tr>
+            <tr><td>2nd Number:</td><td><input type="text" id="second"></td></tr>
+            <tr><td><input type='button' onClick="multiply()" value="multiply"></td><td><input type='button' onClick="divide()" value="divide"></tr>
+        </table>
+        <p>Result is: <span id='result'></span></p>
+    </body>
+    <script>
+        function divide(){
+            first=document.getElementById('first').value;
+            second=document.getElementById('second').value;
+            document.getElementById('result').innerHTML=first/second
+        }
+        function multiply(){
+            first=document.getElementById('first').value;
+            second=document.getElementById('second').value;
+            document.getElementById('result').innerHTML=first*second
+        }
+    </script>
+</html>

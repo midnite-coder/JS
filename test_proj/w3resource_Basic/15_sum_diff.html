@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Sum:</p>
+        <table>
+            <tr>
+                <td>First Number:</td>
+                <td><input type='integer' id="first"></td>
+            </tr>
+            <tr>
+                <td>Second Number:</td>
+                <td><input type='integer' id="sec"></td>
+            </tr>
+            <tr>
+            <input type="button" value="Result" onclick="sum()" >
+            <p id='result'></p>
+            </tr>
+        </table>
+    </body>
+    <script>
+        /*const num=15;
+        if (num>13){
+            result=2*Math.abs(num-13);
+            document.getElementById('demo').innerHTML=result;
+        } else {
+            result=13-num;
+            document.getElementById('demo').innerHTML=result;
+        }*/
+        function sum(){
+            const x=document.getElementById('first').value
+            const y=document.getElementById('sec').value
+            if (x==y){
+                const sum=3*(x+y)
+            } else {
+                const sum=x+y
+            }
+            document.getElementById('result').innerHTML=sum
+        }
+    </script>
+</html>

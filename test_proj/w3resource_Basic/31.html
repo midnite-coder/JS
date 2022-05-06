@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+    </body>
+    <script>
+        var a=43;
+        var b=45;
+        if (Math.abs(100-a)>Math.abs(100-b)){
+            document.getElementById('demo').innerHTML=b +' is closest to 100'
+        } else {
+            document.getElementById('demo').innerHTML=a +' is closest to 100'
+        }
+        if (a>=40 && b<=60 && a<=60 && b>=40){
+            if (a>b){
+                document.getElementById('demo').innerHTML=a +'is largest'
+            } else {
+                document.getElementById('demo').innerHTML=b +'is largest'
+            }
+        }else{
+            document.getElementById('demo').innerHTML='Not in range 40-60'
+        }
+        str='qweerty'
+        char='e'
+        if (str[1]==char || str[3]==char){
+            document.getElementById('demo2').innerHTML=true
+        }else {
+            document.getElementById('demo2').innerHTML=false
+        }
+        var x=137;
+        var y=8;
+        var z=38;
+        if (x%10==y%10 && y%10==z%10){
+            document.getElementById('demo3').innerHTML=true
+        } else {
+            document.getElementById('demo3').innerHTML=false
+        }
+        var l=22;
+        var m=53;
+        var n=44;
+        if (n>=m && m>=l){
+            document.getElementById('demo4').innerHTML='ascending'
+        } else {
+            document.getElementById('demo4').innerHTML='not ascending'
+        }
+        let num='90';
+        for (let i=0; i<=10000;i++){
+            if (toString(i).search(num)){
+                document.getElementById('demo5').innerHTML= num + 'is peresent in'+i
+            }else{
+                document.getElementById('demo5').innerHTML= num + 'is not peresent in 10000'
+            }
+        }
+        res=str.split('').reverse().join('')
+        document.getElementById('demo6').innerHTML=res
+    </script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+    </body>
+    <script>
+        file='javascript'
+        result=file.substr(0,3)+file+file.substr(0,3)
+        document.getElementById('demo').innerHTML=result
+        num=66;
+        if(num%3==0||num%7==0){
+            document.getElementById('demo2').innerHTML=true
+        }else {
+            document.getElementById('demo2').innerHTML=false
+        }
+
+        if (file.startsWith('java')){
+            document.getElementById('demo3').innerHTML=true
+        } else{
+            document.getElementById('demo3').innerHTML=false
+        }
+
+        a=122;
+        b=55;
+        if ((a<=99&&a>=50)||(b<=99&&b>=50)){
+            document.getElementById('demo4').innerHTML=true
+        } else {
+            document.getElementById('demo4').innerHTML=false
+        }
+
+        str='javascript';
+        if (str.length<6){
+            document.getElementById('demo5').innerHTML=str;
+        }else {
+        if (str.substring(4,10)=='script'){
+            res_str=str.substring(0,4)+str.substring(10,str.length)
+            document.getElementById('demo5').innerHTML=res_str
+        } else {
+            res_str=str
+            document.getElementById('demo5').innerHTML=res_str
+        }}
+    
+    </script>
+</html>

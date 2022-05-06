@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+        <p>Enter Temperature: </p>
+        <input type="integer" id="temp">
+        <input type="button" value="Fahrenheit" id="cel" onclick="Fah()">
+        <input type="button" value="Celsius" id="fahr" onclick="Cel()">
+        </form>
+        <p>Result is:<span id='result'></span></p>
+    </body>
+    <script>
+        temp=document.getElementById('temp').value
+        function Cel(){
+            cel=((temp-32)*5)/9
+            document.getElementById('result').innerHTML=cel
+        }
+        function Fah(){
+            fah=((9/5)*(temp))+32
+            document.getElementById('result').innerHTML=fah
+        }
+    </script>
+</html>

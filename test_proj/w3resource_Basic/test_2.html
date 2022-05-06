@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            /*var a=5
+            var b=6
+            var c=7
+            var s=(a+b+c)/2
+            var t=s*(s-a)*(s-b)*(s-c)
+            let area=Math.sqrt(t)
+            document.getElementById('demo').innerHTML=area*/
+            for (var year=2014; year<=2050;year++){
+                var d= new Date(year,0,1);
+                if (d.getDay()===0){
+                    
+                    document.getElementById('demo2').innerHTML=text+='1st January is Sunday'+year
+                }
+            }
+        </script>
+    </body>
+</html>
